@@ -48,7 +48,7 @@ export function convertRGB(r: number | string = 0, g: number | string = 0, b: nu
     g = Number(g)
     b = Number(b)
     r *= 255, g *= 255, b *= 255
-    return [r, g, b]
+    return [parseInt(r.toFixed(0)), parseInt(g.toFixed(0)), parseInt(b.toFixed(0))]
 }
 
 // Converted OpenGL colour format to RGB (e.g. [0, 0, 255] => [0, 0, 1])
