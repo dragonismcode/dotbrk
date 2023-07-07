@@ -1,5 +1,5 @@
 {
-    "name": "brk-parser",
+    "name": "dotbrk",
     "license": "MIT",
     "version": "0.0.1",
     "main": "dist/index.js",
@@ -9,11 +9,12 @@
         "run": "node dist/index.js",
         "build": "tsup src/index.ts --format cjs,esm --dts",
         "dev": "tsup src/index.ts && node dist/index.js",
+        "release": "pnpm run build && changeset publish",
         "lint": "tsc"
     },
     "repository": {
         "type": "git",
-        "url": "https://github.com/dragonismcode/brk-parser.git"
+        "url": "https://github.com/dragonismcode/dotbrk.git"
     },
     "devDependencies": {
         "@changesets/cli": "^2.26.2",
@@ -22,7 +23,7 @@
         "typescript": "^5.1.6"
     },
     "bugs": {
-        "url": "https://github.com/dragonismcode/brk-parser/issues"
+        "url": "https://github.com/dragonismcode/dotbrk/issues"
     },
-    "homepage": "https://github.com/dragonismcode/brk-parser#readme"
+    "homepage": "https://github.com/dragonismcode/dotbrk#readme"
 }
