@@ -1,6 +1,5 @@
 {
     "name": "dotbrk",
-    "license": "MIT",
     "version": "0.0.2",
     "main": "dist/index.js",
     "types": "dist/index.d.ts",
@@ -16,6 +15,12 @@
         "type": "git",
         "url": "https://github.com/dragonismcode/dotbrk.git"
     },
+    "contributors": [
+        {
+            "name": "Jake",
+            "url": "https://gitlab.com/Meta_Data"
+        }
+    ],
     "devDependencies": {
         "@changesets/cli": "^2.26.2",
         "@types/node": "^20.4.0",
