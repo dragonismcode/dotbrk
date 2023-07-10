@@ -1,3 +1,4 @@
+import { checkCollision3d } from "../util/math"
 import Vector3 from "./Vector3"
 
 export default class Brick {
@@ -43,5 +44,9 @@ export default class Brick {
         this.color = color
         this.visibility = 1
         this.collision = true
+    }
+
+    intersects(brick: Brick): boolean {
+        return checkCollision3d(this, brick)
     }
 }
